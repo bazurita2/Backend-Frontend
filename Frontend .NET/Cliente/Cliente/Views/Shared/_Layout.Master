@@ -1,0 +1,147 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="_Layout.master.cs" Inherits="Cliente.Views.Shared._Layout" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="Style.css" rel="stylesheet" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Proyecto grupo 2</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nómina
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <asp:HyperLink ID="HyperLink20" runat="server" class="dropdown-item"
+                                    NavigateUrl="~/Views/Nomina/CatalogoView.aspx">
+                                    Motivo
+                                </asp:HyperLink>
+                            </li>
+                            <li>
+                                <asp:HyperLink ID="HyperLink21" runat="server" class="dropdown-item"
+                                    NavigateUrl="~/Views/Nomina/EmpleadoView.aspx">
+                                    Empleado
+                                </asp:HyperLink>
+                            </li>
+                           <li>
+                                <asp:HyperLink ID="HyperLink22" runat="server" class="dropdown-item"
+                                    NavigateUrl="~/Views/Nomina/NominaView.aspx">
+                                    Nomina
+                                </asp:HyperLink>
+                            </li>
+                            <li>
+                                <asp:HyperLink ID="HyperLink23" runat="server" class="dropdown-item"
+                                    NavigateUrl="~/Views/Nomina/Reporte1View.aspx">
+                                    Reporte nominas
+                                </asp:HyperLink>
+                            </li>
+                            <li>
+                                <asp:HyperLink ID="HyperLink24" runat="server" class="dropdown-item"
+                                    NavigateUrl="~/Views/Nomina/Reporte2View.aspx">
+                                    Reporte Motivos/Empleados
+                                </asp:HyperLink>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mantenimiento
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <asp:HyperLink ID="HyperLink1" runat="server" class="dropdown-item"
+                                    NavigateUrl="~/Views/Mantenimiento/ActivoView.aspx">
+                                    Activos
+                                </asp:HyperLink>
+                            </li>
+                            <li>
+                                <asp:HyperLink ID="HyperLink2" runat="server" class="dropdown-item"
+                                    NavigateUrl="~/Views/Mantenimiento/CatalogoActividadView.aspx">
+                                    Actividades
+                                </asp:HyperLink>
+                            </li>
+                            <li>
+                                <asp:HyperLink ID="HyperLink3" runat="server" class="dropdown-item"
+                                    NavigateUrl="~/Views/Mantenimiento/GastosActivosView.aspx">
+                                    Gasto Activo
+                                </asp:HyperLink>
+                            </li>
+                            <li>
+                                <asp:HyperLink ID="HyperLink9" runat="server" class="dropdown-item"
+                                    NavigateUrl="~/Views/Mantenimiento/GastosView.aspx">
+                                    Gastos
+                                </asp:HyperLink>
+                            </li>
+                            <li>
+                                <asp:HyperLink ID="HyperLink10" runat="server" class="dropdown-item"
+                                    NavigateUrl="~/Views/Mantenimiento/MantenimientoActivoView.aspx">
+                                    Mantenimiento Activo
+                                </asp:HyperLink>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contabilidad
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                            <li>
+                                <asp:HyperLink ID="HyperLink4" runat="server" class="dropdown-item"
+                                    NavigateUrl="~/Views/Contabilidad/TipoCuentaView.aspx">
+                                    Tipo Cuenta
+                                </asp:HyperLink>
+                            </li>
+                            <li>
+                                <asp:HyperLink ID="HyperLink5" runat="server" class="dropdown-item"
+                                    NavigateUrl="~/Views/Contabilidad/CuentaView.aspx">
+                                    Cuenta contable
+                                </asp:HyperLink>
+                            </li>
+                            <li>
+                                <asp:HyperLink ID="HyperLink6" runat="server" class="dropdown-item"
+                                    NavigateUrl="~/Views/Contabilidad/AsientoManualView.aspx">
+                                    Asiento manual
+                                </asp:HyperLink>
+                            </li>
+                            <li>
+                                <asp:HyperLink ID="HyperLink7" runat="server" class="dropdown-item"
+                                    NavigateUrl="~/Views/Contabilidad/BalanceView.aspx">
+                                    Balance General
+                                </asp:HyperLink>
+                            </li>
+                            <li>
+                                <asp:HyperLink ID="HyperLink8" runat="server" class="dropdown-item"
+                                    NavigateUrl="~/Views/Contabilidad/EstadoResultadosView.aspx">
+                                    Estado Resultados
+                                </asp:HyperLink>
+                            </li>                            
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

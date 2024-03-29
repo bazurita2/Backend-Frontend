@@ -1,0 +1,6 @@
+﻿.modalBack {
+
+    opacity: .75;
+    background-color: #CCC;
+    z-index: 1000
+}
